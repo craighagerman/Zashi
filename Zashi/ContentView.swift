@@ -12,28 +12,35 @@ import WebKit
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            NewsListCard(headline: "The Big Review: Eastman Romeo LA",
-                         imageName: "Eastman-Romeo-LA-thumbnail",
-                         source: "guitar.com",
-                         whenPublished: "1 hour ago",
-                         navTitle: "foobar")
-        }.buttonStyle(PlainButtonStyle())
+            VStack{
+                NewsListCard(headline: "The Big Review: Eastman Romeo LA",
+                             url: "https://guitar.com/review/electric-guitar/the-big-review-eastman-romeo-la/",
+                             imageName: "Eastman-Romeo-LA-thumbnail",
+                             publisher: "guitar.com",
+                             whenPublished: "1 hour ago"
+                )
+                NewsListCard(headline: "The Good and the Bad of Vue.js Framework Programming",
+                             url: "https://www.altexsoft.com/blog/engineering/pros-and-cons-of-vue-js/",
+                             imageName: "vue_thumbnail",
+                             publisher: "altexsoft.com",
+                             whenPublished: "1 month ago")
+                
+            }
+        }
     }
 }
 
 
 struct NewsListCard: View {
     var headline: String
+    var url: String
     var imageName: String
-    var source: String
+    var publisher: String
     var whenPublished: String
-    var navTitle: String
     
     @State var active = false
-//    @State var text = "<html><body><h1>Hello World</h1></body></html>"
-//    @State var url = "https://www.yahoo.com"
-    @State var url = "https://guitar.com/review/electric-guitar/the-big-review-eastman-romeo-la/"
-    
+    @State var navTitle = "Zashi"
+
     var body: some View {
         NavigationLink( destination: UrlView(url: url), isActive: $active) {
             HStack(alignment: .center) {
@@ -45,9 +52,9 @@ struct NewsListCard: View {
                 
                 VStack(alignment: .leading) {
                     Text(headline)
-                        .font(.system(size: 20, weight: .bold, design: .default))
+                        .font(.system(size: 18, weight: .bold, design: .default))
                         .foregroundColor(.black)
-                    Text(source)
+                    Text(publisher)
                         .font(.system(size: 14, weight: .bold, design: .default))
                         .foregroundColor(.gray)
                     HStack {
