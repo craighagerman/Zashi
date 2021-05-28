@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8DBDDFBA266070B30090EB24 /* ContentViewTapStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBDDFB9266070B30090EB24 /* ContentViewTapStack.swift */; };
+		8DBDDFBD26608FFF0090EB24 /* NewsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBDDFBC26608FFF0090EB24 /* NewsCardView.swift */; };
+		8DBDDFBF2660907E0090EB24 /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBDDFBE2660907E0090EB24 /* NewsArticleView.swift */; };
 		8DC278032659E5E10072767C /* ZashiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC278022659E5E10072767C /* ZashiApp.swift */; };
 		8DC278052659E5E10072767C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC278042659E5E10072767C /* ContentView.swift */; };
 		8DC278072659E5E40072767C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC278062659E5E40072767C /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		8DBDDFB9266070B30090EB24 /* ContentViewTapStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTapStack.swift; sourceTree = "<group>"; };
+		8DBDDFBC26608FFF0090EB24 /* NewsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardView.swift; sourceTree = "<group>"; };
+		8DBDDFBE2660907E0090EB24 /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
 		8DC277FF2659E5E10072767C /* Zashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC278022659E5E10072767C /* ZashiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZashiApp.swift; sourceTree = "<group>"; };
 		8DC278042659E5E10072767C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			children = (
 				8DC278022659E5E10072767C /* ZashiApp.swift */,
 				8DC278042659E5E10072767C /* ContentView.swift */,
+				8DBDDFBE2660907E0090EB24 /* NewsArticleView.swift */,
+				8DBDDFBC26608FFF0090EB24 /* NewsCardView.swift */,
 				8DC278062659E5E40072767C /* Assets.xcassets */,
 				8DC2780B2659E5E40072767C /* Persistence.swift */,
 				8DC278102659E5E40072767C /* Info.plist */,
@@ -166,8 +172,10 @@
 				8DC2780F2659E5E40072767C /* Zashi.xcdatamodeld in Sources */,
 				8DF04794265DDBC3009B73B6 /* ContentViewNavigation.swift in Sources */,
 				8DC278052659E5E10072767C /* ContentView.swift in Sources */,
+				8DBDDFBF2660907E0090EB24 /* NewsArticleView.swift in Sources */,
 				8DC278032659E5E10072767C /* ZashiApp.swift in Sources */,
 				8DC278172659E78E0072767C /* NewsCard.swift in Sources */,
+				8DBDDFBD26608FFF0090EB24 /* NewsCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
